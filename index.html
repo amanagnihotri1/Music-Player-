@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="" type="image/x-icon">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aae7ef59b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn0.iconfinder.com/data/icons/media-yellow/60/001_-_play-512.png" type="image/png">
+    <title>Music Player</title>
+</head>
+<body id="scene">
+  <div class="container">
+        <div class="audio-image">
+            <img class="artist-poster" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a0f14794-d139-4edf-8b9f-07053b24b754/d4wc7re-346bce20-8127-4722-ad21-a04c3bb8642b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EwZjE0Nzk0LWQxMzktNGVkZi04YjlmLTA3MDUzYjI0Yjc1NFwvZDR3YzdyZS0zNDZiY2UyMC04MTI3LTQ3MjItYWQyMS1hMDRjM2JiODY0MmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.J2UkaayEZEUU96gjRzmf6hxcZxc--YkFHR2EeGJ-t6w" alt="">
+        </div>
+    <div class="controller">
+      <h1 id="songtitle">Stay</h1>  
+      <h2 id="songartist">Justin Bieber,The Kid LAROI</h2>
+    <div class="slide-container">   
+      <audio id="mplayer" src="" preload="auto"></audio>
+  <input class="slider" step="1" type="range" id="myRange">
+ <span id="start">0:00</span>
+ <span id="end">0:00</span>
+  </div>        
+  <img class="music-play" id="music-img" src="https://www.pngall.com/wp-content/uploads/5/Play-Button-PNG-High-Quality-Image.png">
+    <img class="music-next" src="https://static.thenounproject.com/png/578168-200.png">
+  <img class="music-previous" src="https://static.thenounproject.com/png/578168-200.png">
+</div>    
+<div class="volume-slid">
+  <div class="slideimage">
+  <img src="http://cdn.onlinewebfonts.com/svg/img_197878.png"></div>
+  <input type="range" name="volume slider" id="vslide" class="volume-slide" >
+</div>
+<div id="album">
+  <img src="https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_playlist_play_48px-512.png" alt="">
+   <i class="fas fa-random" id="shuffle"></i>
+   <i class="fas fa-redo" id="redo"></i>
+</div>
+<div id="modeslider">
+  <div id="modesliderimg">
+  <img id="imgswitch" src="https://cdn0.iconfinder.com/data/icons/ecommerce-vol-2-solid/32/Interface_ui_ecommerce-38-512.png">
+  </div>
+  <span id="mode-title">Dark</span>
+
+</div>
+<script src="media.js"></script>  
+</body>
+</html>

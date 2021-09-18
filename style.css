@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+#scene
+{  overflow: hidden;
+  align-items: center;
+  background-color:#dcd8e7;
+box-sizing: border-box;
+transition: 0.5s;
+}
+.container
+{  display: flex;
+    position: relative;
+    align-items: center;
+   background-color: #dbebea; 
+   border-radius:10px;
+    left: 14rem;
+    width: 70vw;
+    height: 40vw;
+    margin-top:4rem;
+    box-shadow: 2px 10px 20px 4px rgba(0, 0, 0, 0.178);
+}
+.audio-image
+{ 
+  position: absolute; 
+  flex: 50%; 
+   width:20rem;
+    height:20rem;
+    top: 8rem;
+    border-radius:20rem;
+    left: 7rem;
+    box-shadow: 0rem 0.8rem 2rem 0.3rem rgba(114, 106, 106, 0.479) ;
+  }  
+.artist-poster
+{   
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  } 
+
+.music-play
+{
+  width: 120px;
+   height: 120px;
+position: absolute;
+top: 8rem;
+left: 1rem;
+ }
+.controller
+{   display: block;
+    position: absolute;
+    left: 42rem;
+    top: 19rem;
+    width: 100vw;
+    height: 100vh;
+    flex: 50%;
+
+}
+.music-next
+{   position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 10rem;
+    top: 9rem;
+}
+.music-previous
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: -7rem;
+    top: 9rem;
+    transform: rotate(180deg);
+}
+.slider-container
+{   position: relative;
+    display: block;   
+    width: 5rem;
+    height: 1rem;
+ }
+.slider
+{ 
+    -webkit-appearance: none;
+    width: 23%;
+    height: 7px;
+    border-radius: 5px ;
+    background: #49da2c;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    position: absolute;
+    top: 7%;
+    left: -6.6%;
+}
+.slider:hover {
+    opacity: 1;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+  }  
+  .controller h1
+  { position: absolute;
+    top: -12rem;
+    left: -7rem;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+  }
+  .controller h2
+  { position: absolute;
+    top: -4rem;
+    left: -7rem;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+  }
+  #start
+  { 
+    position: absolute;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.8rem;
+    left: -5.8rem;
+    top: 0rem;
+  }
+ #end
+ {
+  position: absolute;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.8rem;
+    left: 12.4rem;
+    top: 0rem; 
+ }
+ .slideimage
+ { position: relative;
+   width: 2.4rem;
+   height: 2rem;
+   object-fit: contain;
+   position: absolute;
+   left: -40rem;
+   top: 15.5rem;
+  }
+  .slideimage img
+  {
+    width: 100%;
+    height: 100%;
+  object-fit: coontain;
+  }
+  .volume-slide
+  {    
+      -webkit-appearance: none;
+      width: 100%;
+      height: 7px;
+      border-radius: 5px ;
+      background: #49da2c;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: 0.5s;
+      transition: opacity 0.5s;
+      position: absolute;
+      top: 16rem;
+      left: -37rem;
+     
+    }
+  
+    .volume-slide::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #000000;
+      cursor: pointer;
+      
+    }
+    .volume-slide::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #000000;
+      cursor: pointer;
+    } 
+    .volume-slid
+    {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      top: 4rem;
+      left: 80rem;
+    }
+    #album
+    { width: 2rem;
+      height: 2rem;
+     position: relative; 
+     top: 14.5rem;
+     left: 8rem;
+     transition: 0.4s;
+    }
+    #album img
+    {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: 0.4s;
+    }
+    #mode-title
+    {
+      font-family: 'Montserrat', sans-serif; 
+      color: aqua;
+      background-color:black ;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      
+    
+      font-size: 1rem;
+      font-weight: 600;
+      position: absolute;
+      left: -6.0rem;
+      top: -18.5rem;
+      transition: 0.4s;
+      padding: 10px 10px 10px 10px;
+
+    }
+    #mode-title:hover
+    {  font-weight: 600;
+       background-color: rgb(255, 255, 255);
+       border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+       color: rgb(0, 0, 0);
+       padding: 10px 10px 10px 10px;
+      cursor: pointer;
+    }
+    #modeslider
+    { 
+      position: relative;
+      width: 7rem;
+      height: 7rem;
+      top: 4rem;
+      left: 2rem;
+    }
+  
+    #modesliderimg img
+    { transition: 0.4s;
+       width: 100%;
+       height: 100%;
+       object-fit: contain;
+    }
+    #modesliderimg
+    { border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      position: relative;
+      width: 3rem;
+      height: 2.5rem;
+      top: -18.5rem;
+      left: -9rem; 
+      background-color: #49da2c;   
+     transition: 0.4s;
+    }
+    #shuffle
+    { transition: 0.4s;
+     position: absolute;
+     top: 0.5rem;
+     left: 5rem;
+    }
+  #redo
+  { transition: 0.4s;
+   position: absolute;
+   top: 0.5rem;
+   left: -5rem;
+  }
+  #album img:hover
+  {
+    padding: 5px 2px 5px 5px;  
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #49da2c;
+  
+  }
+  #shuffle:hover
+  { border-radius: 3px;
+    padding: 5px 5px 5px 5px;  
+    cursor: pointer;
+    background-color: #49da2c;
+  }
+  #redo:hover
+  { border-radius: 3px;
+    padding: 5px 5px 5px 5px;  
+    cursor: pointer;
+    background-color: #49da2c;
+  }
